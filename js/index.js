@@ -102,7 +102,7 @@ function displayForwardProject() {
         }, 1000 / 60);
     });
     const render = document.querySelector('.render');
-    render.src = `../render/render-canvas-project2/${getZeroes(frame)}${(frame).toString()}.jpg`;
+    render.src = `render/render-canvas-project2/${getZeroes(frame)}${(frame).toString()}.jpg`;
     if (frame < frameCount) {
         frame++;
     } else {
@@ -120,7 +120,7 @@ function displayBackwardProject() {
         }, 1000 / 60);
     });
     const render = document.querySelector('.render');
-    render.src = `../render/render-canvas-project2/${getZeroes(frame)}${(frame).toString()}.jpg`;
+    render.src = `render/render-canvas-project2/${getZeroes(frame)}${(frame).toString()}.jpg`;
     if (frame > 1) {
         frame--;
     } else {
@@ -161,7 +161,7 @@ function displayForwardEducation() {
         }, 1000 / 60);
     });
     const render = document.querySelector('.render');
-    render.src = `../render/render-canvas-education2/${getZeroes(frame)}${(frame).toString()}.jpg`;
+    render.src = `render/render-canvas-education2/${getZeroes(frame)}${(frame).toString()}.jpg`;
     if (frame < frameCount) {
         frame++;
     } else {
@@ -179,7 +179,7 @@ function displayBackwardEducation() {
         }, 1000 / 60);
     });
     const render = document.querySelector('.render');
-    render.src = `../render/render-canvas-education2/${getZeroes(frame)}${(frame).toString()}.jpg`;
+    render.src = `render/render-canvas-education2/${getZeroes(frame)}${(frame).toString()}.jpg`;
     if (frame > 1) {
         frame--;
     } else {
@@ -221,7 +221,7 @@ function displayForwardContact() {
         }, 1000 / 60);
     });
     const render = document.querySelector('.render');
-    render.src = `../render/render-canvas-contact2/${getZeroes(frame)}${(frame).toString()}.jpg`;
+    render.src = `render/render-canvas-contact2/${getZeroes(frame)}${(frame).toString()}.jpg`;
     if (frame < frameCount) {
         frame++;
     } else {
@@ -239,7 +239,7 @@ function displayBackwardContact() {
         }, 1000 / 60);
     });
     const render = document.querySelector('.render');
-    render.src = `../render/render-canvas-contact2/${getZeroes(frame)}${(frame).toString()}.jpg`;
+    render.src = `render/render-canvas-contact2/${getZeroes(frame)}${(frame).toString()}.jpg`;
     if (frame > 1) {
         frame--;
     } else {
@@ -379,7 +379,7 @@ function displayUpAnimationC() {
         }, 1000 / 60);
     });
     const render = document.querySelector('.render-project');
-    render.src = `../render/render-project/C/${getZeroes(frameProjectC)}${(frameProjectC).toString()}.png`;
+    render.src = `render/render-project/C/${getZeroes(frameProjectC)}${(frameProjectC).toString()}.png`;
     if (frameProjectC > 50) {
         textProjectC.classList.add('is-active');
     }
@@ -398,7 +398,7 @@ function displayDownAnimationC() {
         }, 1000 / 60);
     });
     const render = document.querySelector('.render-project');
-    render.src = `../render/render-project/C/${getZeroes(frameProjectC)}${(frameProjectC).toString()}.png`;
+    render.src = `render/render-project/C/${getZeroes(frameProjectC)}${(frameProjectC).toString()}.png`;
     if (frameProjectC < 50) {
         textProjectC.classList.remove('is-active');
     }
@@ -444,7 +444,7 @@ function displayUpAnimationCSharp() {
         }, 1000 / 60);
     });
     const render = document.querySelector('.render-project');
-    render.src = `../render/render-project/C-sharp/${getZeroes(frameProjectCSharp)}${(frameProjectCSharp).toString()}.png`;
+    render.src = `render/render-project/C-sharp/${getZeroes(frameProjectCSharp)}${(frameProjectCSharp).toString()}.png`;
     if (frameProjectCSharp > 50) {
         textProjectCSharp.classList.add('is-active');
     }
@@ -463,7 +463,7 @@ function displayDownAnimationCSharp() {
         }, 1000 / 60);
     });
     const render = document.querySelector('.render-project');
-    render.src = `../render/render-project/C-sharp/${getZeroes(frameProjectCSharp)}${(frameProjectCSharp).toString()}.png`;
+    render.src = `render/render-project/C-sharp/${getZeroes(frameProjectCSharp)}${(frameProjectCSharp).toString()}.png`;
     if (frameProjectCSharp < 50) {
         textProjectCSharp.classList.remove('is-active');
     }
@@ -509,7 +509,7 @@ function displayUpAnimationJava() {
         }, 1000 / 60);
     });
     const render = document.querySelector('.render-project');
-    render.src = `../render/render-project/java/${getZeroes(frameProjectJava)}${(frameProjectJava).toString()}.png`;
+    render.src = `render/render-project/java/${getZeroes(frameProjectJava)}${(frameProjectJava).toString()}.png`;
     if (frameProjectJava > 50) {
         textProjectJava.classList.add('is-active');
     }
@@ -528,7 +528,7 @@ function displayDownAnimationJava() {
         }, 1000 / 60);
     });
     const render = document.querySelector('.render-project');
-    render.src = `../render/render-project/java/${getZeroes(frameProjectJava)}${(frameProjectJava).toString()}.png`;
+    render.src = `render/render-project/java/${getZeroes(frameProjectJava)}${(frameProjectJava).toString()}.png`;
     if (frameProjectJava < 50) {
         textProjectJava.classList.remove('is-active');
     }
@@ -574,7 +574,7 @@ function displayUpAnimationHtml() {
         }, 1000 / 60);
     });
     const render = document.querySelector('.render-project');
-    render.src = `../render/render-project/html/${getZeroes(frameProjectHtml)}${(frameProjectHtml).toString()}.png`;
+    render.src = `render/render-project/html/${getZeroes(frameProjectHtml)}${(frameProjectHtml).toString()}.png`;
     if (frameProjectHtml > 50) {
         textProjectHtml.classList.add('is-active');
     }
@@ -593,7 +593,7 @@ function displayDownAnimationHtml() {
         }, 1000 / 60);
     });
     const render = document.querySelector('.render-project');
-    render.src = `../render/render-project/html/${getZeroes(frameProjectHtml)}${(frameProjectHtml).toString()}.png`;
+    render.src = `render/render-project/html/${getZeroes(frameProjectHtml)}${(frameProjectHtml).toString()}.png`;
     if (frameProjectHtml < 50) {
         textProjectHtml.classList.remove('is-active');
     }
@@ -638,7 +638,7 @@ function displayUpAnimationBlender() {
         }, 1000 / 60);
     });
     const render = document.querySelector('.render-project');
-    render.src = `../render/render-project/blender/${getZeroes(frameProjectBlender)}${(frameProjectBlender).toString()}.png`;
+    render.src = `render/render-project/blender/${getZeroes(frameProjectBlender)}${(frameProjectBlender).toString()}.png`;
     if (frameProjectBlender > 50) {
         textProjectBlender.classList.add('is-active');
     }
@@ -657,7 +657,7 @@ function displayDownAnimationBlender() {
         }, 1000 / 60);
     });
     const render = document.querySelector('.render-project');
-    render.src = `../render/render-project/blender/${getZeroes(frameProjectBlender)}${(frameProjectBlender).toString()}.png`;
+    render.src = `render/render-project/blender/${getZeroes(frameProjectBlender)}${(frameProjectBlender).toString()}.png`;
     if (frameProjectBlender < 50) {
         textProjectBlender.classList.remove('is-active');
     }
@@ -728,7 +728,7 @@ function displayUpAnimationTwitter() {
         }, 1000 / 60);
     });
     const render = document.querySelector('.render-contact');
-    render.src = `../render/render-contact/twitter/${getZeroes(frameContactTwitter)}${(frameContactTwitter).toString()}.png`;
+    render.src = `render/render-contact/twitter/${getZeroes(frameContactTwitter)}${(frameContactTwitter).toString()}.png`;
     if (frameContactTwitter < frameCount && isMouseHoverTwitter) {
         frameContactTwitter++;
     } else {
@@ -744,7 +744,7 @@ function displayDownAnimationTwitter() {
         }, 1000 / 60);
     });
     const render = document.querySelector('.render-contact');
-    render.src = `../render/render-contact/twitter/${getZeroes(frameContactTwitter)}${(frameContactTwitter).toString()}.png`;
+    render.src = `render/render-contact/twitter/${getZeroes(frameContactTwitter)}${(frameContactTwitter).toString()}.png`;
     if (frameContactTwitter > 1 && !isMouseHoverTwitter) {
         frameContactTwitter--;
     } else {
@@ -787,7 +787,7 @@ function displayUpAnimationGithub() {
         }, 1000 / 60);
     });
     const render = document.querySelector('.render-contact');
-    render.src = `../render/render-contact/github/${getZeroes(frameContactGithub)}${(frameContactGithub).toString()}.png`;
+    render.src = `render/render-contact/github/${getZeroes(frameContactGithub)}${(frameContactGithub).toString()}.png`;
     if (frameContactGithub < frameCount && isMouseHoverGithub) {
         frameContactGithub++;
     } else {
@@ -803,7 +803,7 @@ function displayDownAnimationGithub() {
         }, 1000 / 60);
     });
     const render = document.querySelector('.render-contact');
-    render.src = `../render/render-contact/github/${getZeroes(frameContactGithub)}${(frameContactGithub).toString()}.png`;
+    render.src = `render/render-contact/github/${getZeroes(frameContactGithub)}${(frameContactGithub).toString()}.png`;
     if (frameContactGithub > 1 && !isMouseHoverGithub) {
         frameContactGithub--;
     } else {
@@ -844,7 +844,7 @@ function displayUpAnimationLinkedin() {
         }, 1000 / 60);
     });
     const render = document.querySelector('.render-contact');
-    render.src = `../render/render-contact/linkedin/${getZeroes(frameContactLinkedin)}${(frameContactLinkedin).toString()}.png`;
+    render.src = `render/render-contact/linkedin/${getZeroes(frameContactLinkedin)}${(frameContactLinkedin).toString()}.png`;
     if (frameContactLinkedin < frameCount && isMouseHoverLinkedin) {
         frameContactLinkedin++;
     } else {
@@ -860,7 +860,7 @@ function displayDownAnimationLinkedin() {
         }, 1000 / 60);
     });
     const render = document.querySelector('.render-contact');
-    render.src = `../render/render-contact/linkedin/${getZeroes(frameContactLinkedin)}${(frameContactLinkedin).toString()}.png`;
+    render.src = `render/render-contact/linkedin/${getZeroes(frameContactLinkedin)}${(frameContactLinkedin).toString()}.png`;
     if (frameContactLinkedin > 1 && !isMouseHoverLinkedin) {
         frameContactLinkedin--;
     } else {
@@ -932,7 +932,7 @@ function displayUpAnimationSfsu() {
         }, 1000 / 60);
     });
     const render = document.querySelector('.render-education');
-    render.src = `../render/render-education/sfsu/${getZeroes(frameEducationSfsu)}${(frameEducationSfsu).toString()}.png`;
+    render.src = `render/render-education/sfsu/${getZeroes(frameEducationSfsu)}${(frameEducationSfsu).toString()}.png`;
     if (frameEducationSfsu < frameCount && isMouseHoverSfsu) {
         frameEducationSfsu++;
     } else {
@@ -948,7 +948,7 @@ function displayDownAnimationSfsu() {
         }, 1000 / 60);
     });
     const render = document.querySelector('.render-education');
-    render.src = `../render/render-education/sfsu/${getZeroes(frameEducationSfsu)}${(frameEducationSfsu).toString()}.png`;
+    render.src = `render/render-education/sfsu/${getZeroes(frameEducationSfsu)}${(frameEducationSfsu).toString()}.png`;
     if (frameEducationSfsu > 1 && !isMouseHoverSfsu) {
         frameEducationSfsu--;
     } else {
@@ -994,7 +994,7 @@ function displayUpAnimationEpita() {
         }, 1000 / 60);
     });
     const render = document.querySelector('.render-education');
-    render.src = `../render/render-education/epita/${getZeroes(frameEducationEpita)}${(frameEducationEpita).toString()}.png`;
+    render.src = `render/render-education/epita/${getZeroes(frameEducationEpita)}${(frameEducationEpita).toString()}.png`;
     if (frameEducationEpita < frameCount && isMouseHoverEpita) {
         frameEducationEpita++;
     } else {
@@ -1010,7 +1010,7 @@ function displayDownAnimationEpita() {
         }, 1000 / 60);
     });
     const render = document.querySelector('.render-education');
-    render.src = `../render/render-education/epita/${getZeroes(frameEducationEpita)}${(frameEducationEpita).toString()}.png`;
+    render.src = `render/render-education/epita/${getZeroes(frameEducationEpita)}${(frameEducationEpita).toString()}.png`;
     if (frameEducationEpita > 1 && !isMouseHoverEpita) {
         frameEducationEpita--;
     } else {

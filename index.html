@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Kevin Afonso</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        <main>
+            <!-- <div class="explorer">
+                <div class="section" id="section-1" onmouseover="MouseHover(this)" onmouseout="MouseOut(this)">
+                    <p>Profile</p>
+                    <p class="number">1</p>
+                </div>
+                <div class="section" id="section-2" onmouseover="MouseHover(this)" onmouseout="MouseOut(this)">
+                    <p>Education</p>
+                    <p class="number">2</p>
+                </div>
+                <div class="section" id="section-3" onmouseover="MouseHover(this)" onmouseout="MouseOut(this)">
+                    <p>Projects</p>
+                    <p class="number">3</p>
+                </div>
+                <div class="section" id="section-4" onmouseover="MouseHover(this)" onmouseout="MouseOut(this)">
+                    <p>Contact</p>
+                    <p class="number">4</p>
+                </div>
+                
+            </div> -->
+            <div class="canvas">
+                <img class="render" src="render/render-canvas-project2/0001.jpg">
+                <button class="launch launch-project is-active" onclick="launchAnimationProject()">
+                    <p>Project</p>
+                </button>
+                <button class="back back-project" onclick="cancelAnimationProject()">
+                    <img src="Images/back_icon.png" alt="back">
+                </button>
+                <button class="launch launch-education is-active" onclick="launchAnimationEducation()">
+                    <p>Education</p>
+                </button>
+                <button class="back back-education" onclick="cancelAnimationEducation()">
+                    <img src="Images/back_icon.png" alt="back">
+                </button>
+                <button class="launch launch-contact is-active" onclick="launchAnimationContact()">
+                    <p>Contact</p>
+                </button>
+                <button class="back back-contact" onclick="cancelAnimationContact()">
+                    <img src="Images/back_icon.png" alt="back">
+                </button>
+                <p class="text-welcome">Welcome</p>
+                <p class="text-project">Project</p>
+                <p class="text-education">Education</p>
+                <p class="text-contact">Contact</p>
+                <div class="hitbox hitbox-project" onclick="scrolltoProject()"></div>
+                <div class="hitbox hitbox-education" onclick="scrolltoEducation()"></div>
+                <div class="hitbox hitbox-contact" onclick="scrolltoContact()"></div>
+                <p class="madeby">Made by @Kevin Afonso</p>
+            </div>
+            <div class="section section-project">
+                <img class="render-project" src="render/render-project/C/0001.png">
+                <div class="hitbox hitbox-project-c" onmouseenter="overProjectC()" onmouseout="nooverProjectC()" ></div>
+                <div class="hitbox hitbox-project-c-sharp" onmouseenter="overProjectCSharp()" onmouseout="nooverProjectCSharp()"></div>
+                <div class="hitbox hitbox-project-java" onmouseenter="overProjectJava()" onmouseout="nooverProjectJava()"></div>
+                <div class="hitbox hitbox-project-html" onmouseenter="overProjectHtml()" onmouseout="nooverProjectHtml()"></div>
+                <div class="hitbox hitbox-project-blender" onmouseenter="overProjectBlender()" onmouseout="nooverProjectBlender()"></div>
+                <button onclick="scrolltoCanvas()">
+                    <img src="Images//up_icon.png" alt="back">
+                </button>
+                <p class="text-project-c">Text for C</p>
+                <p class="text-project-c-sharp">Text for C Sharp</p>
+                <p class="text-project-java">Text for Java</p>
+                <p class="text-project-html">text for HTML</p>
+                <p class="text-project-blender">Text for Blender</p>
+            </div>
+            <div class="section section-education">
+                <img class="render-education" src="render/render-education/sfsu/0001.png">
+                <div class="hitbox hitbox-education-sfsu" onmouseenter="overEducationSfsu()" onmouseout="nooverEducationSfsu()"
+                onclick="onclickSfsu()"></div>
+                <div class="hitbox hitbox-education-epita" onmouseenter="overEducationEpita()" onmouseout="nooverEducationEpita()"
+                onclick="onclickEpita()"></div>
+                <button onclick="scrolltoCanvas()">
+                    <img src="Images/up_icon.png" alt="back">
+                </button>
+            </div>
+            <div class="section section-contact">
+                <img class="render-contact" src="render/render-contact/twitter/0001.png">
+                <div class="hitbox hitbox-contact-twitter" onmouseenter="overContactTwitter()" onmouseout="nooverContactTwitter()"
+                onclick="onclickTwitter()"></div>
+                <div class="hitbox hitbox-contact-github" onmouseenter="overContactGithub()" onmouseout="nooverContactGithub()"
+                onclick="onclickGithub()"></div>
+                <div class="hitbox hitbox-contact-linkedin" onmouseenter="overContactLinkedin()" onmouseout="nooverContactLinkedin()"
+                onclick="onclickLinkedin()"></div>
+                <button onclick="scrolltoCanvas()">
+                    <img src="Images//up_icon.png" alt="back">
+                </button>
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>
