@@ -1,0 +1,413 @@
+/* main {
+    margin-top: 100px;
+} */
+
+/* .explorer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    column-gap: 80px;
+    height: 600px;
+    margin: 200px 0;
+    background-color: lightgrey;
+
+    box-shadow: 0 0 10px grey;
+}
+
+.section {
+    position: relative;
+    height: 500px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightblue;
+    color: white;
+
+    font-size: 40px;
+    font-weight: 700;
+    transition: 1s;
+}
+
+#section-3 {
+    background: url('../Images/project.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.section.is-hover {
+    font-size: 50px;
+}
+
+.section.is-nohover {
+    -webkit-filter: brightness(90%);
+}
+
+.number {
+    position: absolute;
+    bottom: -50%;
+
+    font-size: 300px;
+    font-weight: 700;
+    color: grey;
+
+    opacity: 0;
+    transition: 1s;
+}
+
+.number.is-hover {
+    opacity: 1;
+    bottom: -25%;
+} */
+
+
+body {
+    overflow: hidden;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.canvas {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.canvas button {
+    position: absolute;
+    top: 120%;
+    transform: 1s;
+    opacity: 0;
+}
+
+
+.canvas button.is-active {
+    transition: 0.5s;
+    border: none;
+    padding: 5px 15px;
+    opacity: 0.7;
+    min-width: 30px;
+    min-height: 30px;
+}
+
+.launch {
+    border-radius: 20px;
+}
+
+.canvas button.is-active:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.canvas button p {
+    font-size: 0px;
+    opacity: 0;
+    font-weight: 400;
+    transition: 0.5s;
+}
+
+.canvas button:hover > p {
+    font-size: 16px;
+    opacity: 1;
+}
+
+
+.launch-project.is-active {
+    top: 47%;
+    left: 42%;
+}
+
+.launch-education.is-active {
+    top: 39%;
+    left: 54%;
+}
+
+.launch-contact.is-active {
+    top: 54%;
+    left: 41%;
+}
+
+.back.is-active:hover {
+    cursor: pointer;
+    transform: translateY(10px);
+    background-color: #fff;
+}
+
+.back.is-active {
+    left: 50%;
+    top: 90%;
+    opacity: 1;
+}
+
+.back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #fff;
+}
+
+.back img {
+    width: 30px;
+    height: 30px;
+}
+
+.text-project,
+.text-education,
+.text-contact {
+    position: absolute;
+    font-size: 100px;
+    color: white;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+    opacity: 0;
+}
+
+.text-project {
+    top: 15%;
+    left: 10%;
+}
+
+.text-education {
+    top: 60%;
+    left: 5%;
+}
+
+.text-contact {
+    top: 10%;
+    left: 5%;
+}
+
+.text-welcome {
+    position: absolute;
+    font-size: 100px;
+    color: white;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+    top: 10%;
+    left: 15%;
+}
+
+.hitbox {
+    position: absolute;
+    display: none;
+}
+
+.hitbox-project {
+    width: 800px;
+    height: 500px;
+    top: 13%;
+    left: 26%;
+}
+
+.hitbox-education {
+    width: 250px;
+    height: 400px;
+    top: 28%;
+    left: 41%;
+}
+
+.hitbox-contact {
+    width: 250px;
+    height: 300px;
+    top: 35%;
+    left: 42%;
+}
+
+.hitbox.is-active {
+    display: block;
+}
+
+.hitbox:hover {
+    cursor: pointer;
+}
+
+.madeby {
+    position: absolute;
+    bottom: 30px;
+    color: white;
+}
+
+.section {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.section button {
+    position: absolute;
+    bottom: 25px;
+    right: 50%;
+
+    border: none;
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    opacity: 0.8;
+
+    transition: 0.5s;
+    background-color: white;
+}
+
+.section button img {
+    background-color: white;
+    height: 30px;
+    width: 30px;
+}
+
+.section button:hover {
+    background-color: white;
+    cursor: pointer;
+    transform: translateY(-10px);
+}
+
+
+.section-project .hitbox {
+    display: block;
+    position: absolute;
+    width: 200px;
+    height: 500px;
+}
+
+.section-project .hitbox:hover {
+    cursor: pointer;
+}
+
+.hitbox-project-c {
+    top: 35%;
+    left: 9%;
+}
+
+.hitbox-project-c-sharp {
+    top: 30%;
+    left: 26%;
+}
+
+.hitbox-project-java {
+    top: 25%;
+    left: 45%;
+}
+
+.hitbox-project-html {
+    top: 30%;
+    left: 63%;
+}
+
+.hitbox-project-blender {
+    top: 35%;
+    left: 82%;
+}
+
+
+.section-project p {
+    position: absolute;
+    padding: 10px;
+    border: none;
+    color: black;
+    background-color:goldenrod;
+    
+    opacity: 0;
+    transition: 1s;
+
+    border-radius: 2px;
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+    font-size: 16px;
+
+    box-shadow: 3px 3px white;
+}
+
+.section-project p.is-active {
+    opacity: 1;
+}
+
+.text-project-c {
+    top: 20%;
+    left: 70%;
+}
+
+.text-project-c-sharp {
+    top: 20%;
+    left: 70%;
+}
+
+.text-project-java {
+    top: 20%;
+    left: 70%;
+}
+
+.text-project-html {
+    top: 20%;
+    left: 22%;
+}
+
+.text-project-blender {
+    top: 20%;
+    left: 22%;
+}
+
+
+
+
+
+.section-contact .hitbox {
+    display: block;
+    position: absolute;
+    width: 200px;
+    height: 500px;
+}
+
+.section-contact .hitbox:hover {
+    cursor: pointer;
+}
+
+.hitbox-contact-twitter {
+    top: 35%;
+    left: 19%;
+}
+
+.hitbox-contact-github {
+    top: 30%;
+    left: 44%;
+}
+
+.hitbox-contact-linkedin {
+    top: 35%;
+    left: 70%;
+}
+
+
+
+.section-education .hitbox {
+    display: block;
+    position: absolute;
+    width: 200px;
+    height: 500px;
+}
+
+.section-education .hitbox:hover {
+    cursor: pointer;
+}
+
+.hitbox-education-sfsu {
+    top: 35%;
+    left: 24%;
+}
+
+.hitbox-education-epita {
+    top: 35%;
+    left: 65%;
+}
